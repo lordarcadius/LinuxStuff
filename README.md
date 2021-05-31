@@ -12,17 +12,13 @@
 - **Terminal** \
 [Kitty](https://github.com/kovidgoyal/kitty)
 - **Shell** \
-[ZSH](https://github.com/ohmyzsh/ohmyzsh)
+[Fish](https://fishshell.com/)
 
 ## Recommendations
 #### Arch/AUR
 ```
 rofi gnome-screenshot redshift cli-visualizer neofetch spotify nm-applet
 ```
-#### Zsh plugins
-[powerlevel10k](https://github.com/romkatv/powerlevel10k) \
-[zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) \
-[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
 ## Note
 Most of these configs are specifically made for my installation of Arch Linux. I **URGE** you to go through each of them and set them up for your *linux distro* installation.
