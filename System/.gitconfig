@@ -1,0 +1,12 @@
+[user]
+	name = Vipul Jha
+	email = vipuljha08@gmail.com
+	signingkey = 017B2B2D19471B80
+[commit]
+	gpgsign = true
+[core]
+	editor = nano
+[credential]
+	helper = cache --timeout=80000
+[pull]
+	ff = only

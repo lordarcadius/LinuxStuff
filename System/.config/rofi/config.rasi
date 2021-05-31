@@ -1,0 +1,9 @@
+/** Configured For Applets **/
+
+configuration {
+  show-icons:         true;
+  icon-theme:         "Papirus";
+  location: 3;
+  yoffset: 50;
+  xoffset: -50;
+}

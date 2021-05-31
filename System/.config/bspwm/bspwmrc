@@ -1,0 +1,45 @@
+#!/bin/bash
+
+[ $(pidof -sx sxhkd) ] || sxhkd &
+
+bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+
+bspc config border_width         1.5
+bspc config window_gap          3
+bspc config bottom_padding	0.3
+bspc config top_padding	0.3
+bspc config left_padding	0.3
+bspc config right_padding	0.3
+
+bspc config split_ratio          0.50
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config focus_follows_pointer true
+bspc config focus_by_distance	true
+bspc config focused_border_color "#e0e0e0"
+# bspc config pointer_modifier    mod1
+
+
+#[ $(pidof -sx hsetroot) ] || hsetroot -cover hsetroot -cover ~/Linux/Setup/Walls/lights.jpeg
+nitrogen --restore
+[ $(pidof -sx picom) ] || picom -b --respect-prop-shadow
+killall -q polybar
+while pgrep -u $UID -x polybar > /dev/null; do sleep 0.25; done
+polybar mybar -r &
+setxkbmap -layout us
+setxkbmap -option 'grp:alt_shift_toggle'
+
+bspc rule -a Eog floating=on
+bspc rule -a Ghidra floating=on
+bspc rule -a Android Emulator floating=on
+bspc rule -a kittynmtui floating=on
+bspc rule -a anbox floating=on
+bspc rule -a Firefox focus=on
+bspc rule -a Google-Chrome focus=on
+bspc rule -a libreoffice* focus=on
+
+
+
+wmname LG3D
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+nm-applet

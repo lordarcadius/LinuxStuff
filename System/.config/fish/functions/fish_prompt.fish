@@ -1,0 +1,1 @@
+/home/lordarcadius/.local/share/omf/themes/slacker/fish_prompt.fish

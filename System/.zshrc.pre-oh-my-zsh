@@ -1,0 +1,24 @@
+## PROMPT='%(!.%F{cyan}%~ %F{red}%B#%b%f .%F{magenta}%~ %F{cyan}❯%F{yellow}❯%F{green}❯%f )'
+
+autoload -U promptinit; promptinit
+prompt spaceship
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/lordarcadius/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+export PATH="$PATH:/home/lordarcadius/Android/flutter/bin"
+
+source /home/lordarcadius/Linux/Setup/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/lordarcadius/Linux/Setup/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+
