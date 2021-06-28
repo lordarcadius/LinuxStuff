@@ -28,3 +28,17 @@ alias lsa='ls -a'
 #System-Info
 alias btop='bpytop'
 alias kinfo='uname -a'
+
+#XDO Tool
+alias xs='xdotool selectwindow'
+alias xk='xdotool windowclose'
+
+
+#Github
+alias gst='git status'
+alias cmt='git commit -s'
+alias ga='git add'
+alias gaa='git add .'
+alias gp='git push'
+alias gpo='git push origin'
+alias gl='git log'
