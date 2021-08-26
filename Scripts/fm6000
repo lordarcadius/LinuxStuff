@@ -237,7 +237,7 @@ sub main {
     if ($random) {
         my @arr = map { 0 } (1..6);
         $arr[int rand(6)] = 1;
-        ($wally, $dogbert, $alice, $phb, $asok) = splice @arr, 0, 4;
+        ($wally, $dogbert, $phb) = splice @arr, 0, 4;
     }
 
     my $text = "\n";

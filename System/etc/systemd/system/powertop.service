@@ -1,0 +1,9 @@
+[Unit]
+Description=Powertop Autotune.
+
+[Service]
+Type=oneshot
+ExecStart=/home/lordarcadius/LinuxStuff/Scripts/powertop.sh
+
+[Install]
+WantedBy=multi-user.target

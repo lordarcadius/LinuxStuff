@@ -1,0 +1,8 @@
+[Unit]
+Description=Disable Nvidia.
+
+[Service]
+ExecStart=/home/lordarcadius/LinuxStuff/Scripts/dgpu.sh
+
+[Install]
+WantedBy=multi-user.target
