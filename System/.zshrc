@@ -1,5 +1,3 @@
-
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -47,6 +45,8 @@ ZSH_THEME=lord
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
+# Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
+# See https://github.com/ohmyzsh/ohmyzsh/issues/5765
 # COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
@@ -76,7 +76,6 @@ plugins=(
 	zsh-syntax-highlighting
 )
 
-
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -104,11 +103,52 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+/home/lordarcadius/Code/LinuxStuff/Scripts/./fm6000 -o "Arch Linux" -c green -r
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+#Shortcuts-Random
+alias clear='clear && echo -en "\e[3J" && /home/lordarcadius/Code/LinuxStuff/Scripts/./fm6000 -o "Arch Linux" -c green -r'
+alias clr='clear'
+alias pwr='sudo powertop'
+alias off='shutdown now'
 
-#neofetch
 
+#Shortcuts for Pacman and Yay
+#Update
+alias upd='sudo pacman -Syyu'
+alias upy='yay -Syyu'
+alias update='upd && upy'
+alias pmi='sudo pamac update'
+#Install
+alias pi='sudo pacman -S'
+alias ai='yay -S'
+#Uninstall
+alias pu='sudo pacman -Rns'
+alias au='yay -Rns'
+
+
+#Shortcuts-LS
+alias lsa='ls -a'
+
+
+#System-Info
+alias btop='bpytop'
+alias kinfo='uname -a'
+
+#XDO Tool
+alias xs='xdotool selectwindow'
+alias xk='xdotool windowclose'
+
+
+#Github
+alias gst='git status'
+alias cmt='git commit -s'
+alias ga='git add'
+alias gaa='git add .'
+alias gp='git push'
+alias gpo='git push origin'
+alias gl='git log'
+
+#Exports
 export PATH="$PATH:/home/lordarcadius/Android/flutter/bin"
+#export GPG_TTY=$(tty)
 
